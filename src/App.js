@@ -105,7 +105,7 @@ function App() {
 
 		if (data.text === "Generating....") {
 			const r = await fetch(
-				`http://127.0.0.1:5000/answer/${encodeURIComponent("suprise maj")}`
+				`https://flask-app-ey.onrender.com/answer/${encodeURIComponent("suprise maj")}`
 			);
 			const d = await r.json();
 			setChatHistory((prevChatHistory) => [
